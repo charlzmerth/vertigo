@@ -1,0 +1,51 @@
+<!--
+Charlie Merth
+CSE 154 Section AJ
+[mm/dd/yyyy]
+
+[description]
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vertigo</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vertigo</h1>
+    </header>
+    <main>
+      <section>
+        <div id="searchbar" class="results-row">
+          <h2>Enter a country:</h2>
+          <input id="country-search" type="text">
+          <button id="search-enter">Enter</button>
+        </div>
+        
+        <div id="search-results" class="hidden">
+          <p><span id="results-text"></span><span id="elevation"></span></p>
+          <p><a id="maps-link"></a></p>
+        </div>
+        
+        <div id="search-error" class="hidden">
+          <p id="error-text">Country not found. Please try another one.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Special thanks to <a href="https://simple.wikipedia.org/wiki/List_of_countries_by_highest_point">Wikipedia</a> for geographical data and 
+        <a href="http://wikitable2csv.ggor.de/">Wikitable2CSV</a> for converting said data to CSV format. Maps 
+        powered by Google Maps.
+      </p>
+      <p>
+        Favicon from <a href="https://www.freefavicon.com">freefavicon.com</a>
+      </p>
+    </footer>
+  </body>
+</html>

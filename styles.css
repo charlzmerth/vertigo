@@ -1,0 +1,116 @@
+/*
+Charlie Merth
+CSE 154 Section AJ
+5/14/18
+
+Master styling for the Vertigo website
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+@keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+body {
+   animation: fadein 2s;
+   margin: 0px;
+   font-family: Oxygen;
+   text-align: center;
+   background-image: url(https://i.imgur.com/rp86VpC.jpg);
+   background-size: cover;
+}
+
+header {
+   border-bottom: 2px solid black;
+}
+
+h1 {
+   text-align: center;
+   font-size: 65px;
+   font-weight: bold;
+   letter-spacing: 20px;
+   margin: 20px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+input {
+   background-color: transparent;
+   color: white;
+   text-align: center;
+   outline:none;
+   height: 50px;
+   width: 400px;
+   font-size: 45px;
+   font-weight: bold;
+   border: none;
+   border-bottom: 2px solid black;
+}
+
+button {
+   margin-left: 40px;
+   font-size: 25px;
+   font-family: Oxygen;
+   height: 40px;
+   width: 80px;
+}
+
+footer {
+   background-color: black;
+   color: white;
+   padding: 10px;
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+}
+
+a {
+   color: white;
+}
+
+section {
+   margin-top: 50px;
+}
+
+#search-results {
+   font-size: 35px;
+   background-color: rgba(255, 255, 255, 0.5);
+   display: inline-block;
+   margin: auto;
+   padding: 10px;
+}
+
+#search-results p {
+   margin: 20px;
+}
+
+#elevation {
+   font-weight: bold;
+}
+
+#error-text {
+   color: red;
+   font-weight: bold;
+}
+
+#google-map {
+   display: block;
+   width: 600px;
+   height: 450px;
+   border: 0px;
+}
+
+.results-row {
+   display: flex;
+   flex-flow: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.hidden {
+   display: none !important;
+}
